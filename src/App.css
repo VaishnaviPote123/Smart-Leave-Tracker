@@ -1,0 +1,154 @@
+/* ===== Global Styles ===== */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #fdfbfb, #ebedee);
+  color: #333;
+  line-height: 1.6;
+}
+
+h2 {
+  margin-top: 0;
+  color: #3a3a8c;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+/* ===== Navbar ===== */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(90deg, #00b894, #6c5ce7);
+  color: white;
+  padding: 12px 25px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.navbar .logo {
+  font-size: 22px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.nav-links a,
+.nav-links span {
+  color: white;
+  text-decoration: none;
+  margin-right: 20px;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.nav-links a:hover,
+.nav-links span:hover {
+  color: #ffeaa7;
+  transform: scale(1.05);
+}
+
+.nav-links a.active {
+  border-bottom: 2px solid #ffeaa7;
+  padding-bottom: 4px;
+}
+
+/* ===== Content Card ===== */
+.content {
+  padding: 25px;
+  max-width: 1000px;
+  margin: 30px auto;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.content:hover {
+  transform: translateY(-3px);
+}
+
+/* ===== Tables ===== */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+table th {
+  background: #6c5ce7;
+  color: white;
+  padding: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* ===== Buttons ===== */
+button {
+  padding: 8px 16px;
+  margin: 5px;
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  opacity: 0.9;
+  transform: scale(1.05);
+}
+
+button.primary-btn {
+  background-color: #00b894; /* Teal */
+  color: white;
+}
+
+button.success-btn {
+  background-color: #0984e3; /* Blue */
+  color: white;
+}
+
+button.danger-btn {
+  background-color: #d63031; /* Red */
+  color: white;
+}
+
+/* ===== Forms ===== */
+input,
+select {
+  padding: 10px;
+  margin: 8px 0;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus,
+select:focus {
+  border-color: #6c5ce7;
+  box-shadow: 0 0 5px rgba(108, 92, 231, 0.5);
+  outline: none;
+}
+/* ===== Homepage Background ===== */
+.homepage {
+  min-height: 100vh; /* Full screen */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #dfb023, #fad0c4); /* Pink → Peach gradient */
+  color: white;
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+}
